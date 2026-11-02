@@ -48,7 +48,7 @@ Screenshots:
 <img width="512" height="245" alt="image" src="https://github.com/user-attachments/assets/cde03614-6fde-408b-a4cd-88df8d674ed5" />
 <img width="509" height="256" alt="image" src="https://github.com/user-attachments/assets/76cc2414-a4af-411b-9455-8a75dc0d9150" />
 
-
+Website Page: https://abylaikhan295.github.io/front-end-lab6/
 
 
 
