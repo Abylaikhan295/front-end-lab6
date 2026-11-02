@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 - Sports & Hobbies Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        
+        <section id="profile-section" class="box">
+            <h1>Welcome to My Activity Hub</h1>
+            <h2 id="student-name">Abylaikhan Zhumagul</h2>
+            <h3 class="headline">Chess Enthusiast & Cyclist</h3>
+            <p class="intro-text">Hello! I love strategic board games, fast-paced sports, and long-distance cycling. Welcome to my portfolio.</p>
+            
+            <button id="update-headline-btn">Update Headline & Style</button>
+            <button id="light-theme-btn">Light Theme</button>
+            <button id="dark-theme-btn">Dark Theme</button>
+        </section>
+
+        <section id="about-section" class="box">
+            <h2>About Me</h2>
+            <p>I balance mental strategy through chess with physical endurance and agility from cycling and table tennis.</p>
+            <p id="status-message"><strong>Status:</strong> Training for a 30 km cycling weekend ride!</p>
+            
+            <div id="fun-facts">
+                <p><strong>Fun Facts & Goals:</strong></p>
+                <ul>
+                    <li>I play rapid and blitz chess daily to sharpen tactical focus.</li>
+                    <li>I enjoy intense rallies in table tennis with friends.</li>
+                    <li>My goal is to complete a 50 km cycling gran fondo in next summer.</li>
+                </ul>
+            </div>
+
+            <button id="hide-btn">Hide</button>
+            <button id="show-btn">Show</button>
+            <button id="toggle-btn">Toggle</button>
+        </section>
+
+        <section id="gallery-section" class="box">
+            <h2>My Gallery</h2>
+            <div class="gallery">
+                <img src="https://www.fisu.net/app/uploads/2023/09/table_tennis.jpg" alt="Table Tennis" class="gallery-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTevrrV6ljR5Gt9AAXr7apMSJrvgRfQL5bM09vg2ALztmFqikfvT31HS14w&s=10" alt="Strategy Board" class="gallery-img">
+            </div>
+            <br>
+            <button id="fade-in-btn">Fade In</button>
+            <button id="fade-out-btn">Fade Out</button>
+            <button id="fade-toggle-btn">Fade Toggle</button>
+        </section>
+
+        <section id="accordion-section" class="box">
+            <h2>More Info (Click Headings)</h2>
+
+            <div class="slide-controls">
+                <button id="slide-up-all">Slide Up All</button>
+                <button id="slide-down-all">Slide Down All</button>
+            </div>
+
+            <h3 class="slide-heading">My Favorite Chess Openings</h3>
+            <div class="slide-panel">
+                <p>Sicilian Defense as Black and Queen's Gambit as White.</p>
+            </div>
+
+            <h3 class="slide-heading">Table Tennis Equipment</h3>
+            <div class="slide-panel">
+                <p>An offensive carbon blade with high-spin rubber for aggressive loops and fast counter-attacks.</p>
+            </div>
+
+            <h3 class="slide-heading">Cycling Route Preferences</h3>
+            <div class="slide-panel">
+                <p>Scenic park loops, long paved highway shoulders, and crisp morning endurance rides.</p>
+            </div>
+        </section>
+
+        <section id="skills-section" class="box">
+            <h2>My Hobbies & Skills</h2>
+            <ul id="skills-list">
+                <li>Chess Tactics & Endgame Analysis</li>
+                <li>Table Tennis Spin & Reflexes</li>
+                <li>Cycling Stamina & Cadence Control</li>
+                <li>Bike Maintenance & Tuning</li>
+            </ul>
+            <input type="text" id="skill-input" placeholder="Enter a new hobby or skill">
+            <button id="add-skill-btn">Add Skill</button>
+            <button id="prepend-skill-btn">Prepend Skill</button>
+            <button id="remove-skill-btn">Remove Skill</button>
+        </section>
+        <section id="links-section" class="box">
+            <h2>Social Media Link</h2>
+            <p>Current link: <a id="social-link" href="https://www.instagram.com/abylaikhann_zh/?hl=ru" target="_blank">My Instagram Profile</a></p>
+            <button id="change-link-btn">Change Link to Strava Profile</button>
+        </section>
+        <section id="form-section" class="box">
+            <h2>Contact Form (Live Preview)</h2>
+            <form id="contact-form">
+                <label>Name:</label><br>
+                <input type="text" id="name-input" placeholder="Type your name"><br><br>
+                
+                <label>Email:</label><br>
+                <input type="email" id="email-input" placeholder="Type your email">
+            </form>
+            <div class="live-output">
+                <p><strong>Live Name:</strong> <span id="live-name">-</span></p>
+                <p><strong>Live Email:</strong> <span id="live-email">-</span></p>
+            </div>
+        </section>
+        
+        <section id="animation-section" class="box">
+            <h2>Stat Bars Animation</h2>
+            
+            <div class="skill-item">
+                <span>Chess Tactical Vision (85%)</span>
+                <div class="skill-bar-bg">
+                    <div id="bar-chess" class="skill-bar-fill"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>Table Tennis Agility (75%)</span>
+                <div class="skill-bar-bg">
+                    <div id="bar-tennis" class="skill-bar-fill"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>Cycling Stamina (80%)</span>
+                <div class="skill-bar-bg">
+                    <div id="bar-cycling" class="skill-bar-fill"></div>
+                </div>
+            </div>
+
+            <button id="animate-skills-btn">Animate My Stats</button>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
